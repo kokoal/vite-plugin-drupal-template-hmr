@@ -1,9 +1,10 @@
 {
   "name": "vite-plugin-drupal-template-hmr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vite plugin that make Drupal template HMR happen.",
   "author": "kokoal <open.kokoal@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "homepage": "https://github.com/kokoal/vite-plugin-drupal-template-hmr",
   "repository": {
     "type": "git",
@@ -18,9 +19,6 @@
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "./runtime": {
-      "import": "./dist/runtime/main.mjs"
     }
   },
   "files": [
@@ -29,7 +27,7 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "build": "npx tsup src/index.js --format cjs,esm && npx tsup src/runtime/main.js --format esm -d dist/runtime",
+    "build": "npx tsup src/index.js --format esm && npx tsup src/runtime/main.js --format esm -d dist/runtime",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -1,8 +1,6 @@
 const doHMR = (options) => {
   if (import.meta.hot) {
     import.meta.hot.on('drupal:update:twig', async (ctx) => {
-      console.log(ctx);
-
       if (!ctx.file.includes('templates')) {
         throw new Error('All your twig templates needs to be located in a "templates" folder at the root of your component.');
       }
