@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-drupal-template-hmr",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Vite plugin that make Drupal template HMR happen.",
   "author": "kokoal <open.kokoal@gmail.com>",
   "license": "MIT",

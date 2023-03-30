@@ -2,3 +2,5 @@ node_modules
 .pnpm-store
 dist
 .idea
+.env
+docker-compose.yml
